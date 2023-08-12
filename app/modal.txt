@@ -1,0 +1,105 @@
+<!-- Modal Form -->
+<div class="modal fade" id="tambahdata" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalFormLabel"><strong>Form Data</strong></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input required type="text" class="form-control" id="nama" name="nama"
+                            placeholder="Masukkan nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="npm">NPM</label>
+                        <input required type="number" class="form-control" id="npm" name="npm"
+                            placeholder="Masukkan NPM">
+                    </div>
+                    <div class="form-group">
+                        <label for="fakultas">Fakultas</label>
+                        <select class="form-control" id="fakultas" name="fakultas">
+                            <option value="fakultas1">Fakultas 1</option>
+                            <option value="fakultas2">Fakultas 2</option>
+                            <option value="fakultas3">Fakultas 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="jurusan">Jurusan</label>
+                        <select class="form-control" id="jurusan" name="jurusan">
+                            <option value="jurusan1">Jurusan 1</option>
+                            <option value="jurusan2">Jurusan 2</option>
+                            <option value="jurusan3">Jurusan 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nama_bank">Nama Bank</label>
+                        <select class="form-control" id="nama_bank" name="nama_bank">
+                            <option value="bank1">BRI</option>
+                            <option value="bank1">BNI</option>
+                            <option value="bank1">BSI</option>
+                            <option value="bank1">BTN</option>
+                            <option value="bank1">KB Bukopin</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="jumlah_dibayarkan">Jumlah Dibayarkan</label>
+                        <input required type="text" class="form-control" id="jumlah_dibayarkan" name="jumlah_dibayarkan"
+                            placeholder="Masukkan jumlah yang dibayarkan">
+                    </div>
+                    <div class="form-group">
+                        <label for="jumlah_dikembalikan">Jumlah Dikembalikan</label>
+                        <input required type="number" class="form-control" id="jumlah_dikembalikan"
+                            name="jumlah_dikembalikan" placeholder="Masukkan jumlah yang dikembalikan">
+                    </div>
+                    <div class="form-group">
+                        <label for="transfer_bank">Transfer Bank</label>
+                        <input required type="number" class="form-control" id="transfer_bank" name="transfer_bank"
+                            placeholder="Masukkan transfer bank">
+                    </div>
+                    <div class="form-group">
+                        <label for="no_rekening">Nomor Rekening</label>
+                        <input required type="number" class="form-control" id="no_rekening" name="no_rekening"
+                            placeholder="Masukkan nomor rekening">
+                    </div>
+                    <div class="form-group">
+                        <label for="nama_pemilik_rekening">Nama Pemilik Rekening</label>
+                        <input required type="text" class="form-control" id="nama_pemilik_rekening"
+                            name="nama_pemilik_rekening" placeholder="Masukkan nama pemilik rekening">
+                    </div>
+                    <div class="form-group">
+                        <label for="keterangan">Keterangan</label>
+                        <select class="form-control" id="keterangan" name="keterangan">
+                            <option value="keterangan1">Keterangan 1</option>
+                            <option value="keterangan2">Keterangan 2</option>
+                            <option value="keterangan3">Keterangan 3</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary">Simpan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+fakulty
+
+<select class="form-control" name="fakultas" id="fakultas"
+                                        onchange="updateJurusan()">
+                                        <option value="FEB">FEB</option>
+                                        <option value="FH">FH</option>
+                                        <option value="FKIP">FKIP</option>
+                                        <option value="FT">FT</option>
+                                        <option value="FP">FP</option>
+                                        <option value="FK">FK</option>
+                                        <option value="FMIPA">FMIPA</option>
+                                    </select>
